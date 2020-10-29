@@ -1,0 +1,36 @@
+""" Preconditions:
+-I've created repository for lessons on github > InnaKorsun/glo
+-cd to choosen folder
+"""
+
+1)Move file from untracked to commit and the whole way back. Note: Do not skip any stage.
+git clone https://github.com/InnaKorsun/glo.git 
+//new file is created in folder
+touch home_task1.txt
+// add a few word into file
+echo "First commit" > home_task1.txt
+// home_task is untracked > add to sraged area
+git add home_task1
+// back to  unstaged 
+git reset HEAD home_task1.txt
+
+2. Create a branch from initial commit of master branch
+Precondition:
+Check hash initial commit from git log <hash_initial_commit>
+//swith to initial commit
+git checkout <hash_initial_commit>
+//create new branch develop
+git checkout -b develop
+//push new branch 
+git push --upsteam orgin develop
+
+3. Remove file from git repository only(leave it on file system)
+Preconditions:
+on any branch > file will_delete.txt is created
+//delete file from git
+ git rm --cached will_delete.txt
+//cpmmit changes
+git commit -m "remove will_delete.txt"
+//push
+git push origin main
+
