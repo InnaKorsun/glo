@@ -1,3 +1,4 @@
+
 """ Preconditions:
 -I've created repository for lessons on github > InnaKorsun/glo
 -cd to choosen folder
@@ -33,4 +34,3 @@ on any branch > file will_delete.txt is created
 git commit -m "remove will_delete.txt"
 //push
 git push origin main
-
