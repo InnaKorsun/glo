@@ -34,3 +34,17 @@ on any branch > file will_delete.txt is created
 git commit -m "remove will_delete.txt"
 //push
 git push origin main
+
+4. Create merge conflict and resolve it
+Precondition:
+On main branch and develop present  file with name home_task1.txt. I want to leave version file from develop branch
+//on develop branch
+git merge
+// Info about merge conflict is shown //Edit file
+vim <file>
+// Add file
+git add home_task1.txt.
+//commit
+git commit -m "resolve merge conflict"
+//pull
+ git pull origin main
